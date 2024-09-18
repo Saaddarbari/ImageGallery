@@ -5,7 +5,6 @@
 }
 body{
     background: linear-gradient(90deg,#0D0A0B,#009FC2 );
-    /* background-color: #0D0A0B; */
 }
 .navbar{
     top: 0;
@@ -43,17 +42,75 @@ body{
 .home {
     margin: 207px 321px;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 3.5vw;
   }
 hr{
     margin: 23px 23px;
 }
-h1{
+h1 {
     font-size: 35px;
     display: flex;
     justify-content: center;
     color: #ffffff;
-}#myImg {
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(90deg,#0D0A0B,#009FC2 );
+}
+.navbar{
+    top: 0;
+    position: fixed;
+    color: #ffffff;
+    display:flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(45deg,#0D0A0B,#009FC2 );
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.navbar ul li a{
+    border: 1px solid transparent;
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 20px;
+    padding: 5px 25px;
+    transition:  0.5s ease-out;
+}
+.navbar ul li a:hover{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 29px;
+    background: linear-gradient(45deg,#009FC2, #0D0A0B);
+}
+.home {
+    margin: 250px 321px;
+    color: #ffffff;
+    font-size: 3.5vw;
+  }
+hr{
+    margin: 23px 23px;
+}
+h1 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -77,8 +134,8 @@ h1{
     height: 59%;
     object-fit: contain;
     border-radius: 10px;
-    border: 2px solid rgba(255,255,255,0.684);
-    transition: all ease-in-out 0.5s; 
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
 }
 
 .flex-item:hover {
@@ -96,8 +153,8 @@ h1{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -127,8 +184,8 @@ h1{
 }
 
 @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+    from { transform: scale(0); }
+    to { transform: scale(1); }
 }
 
 /* The Close Button */
@@ -155,7 +212,7 @@ h1{
         margin: 50px 0 0 100px;
         width: 80%;
         height: auto;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -170,12 +227,12 @@ h1{
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .container {
         margin: 20px 0 0 50px;
         width: 90%;
         height: auto;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -193,10 +250,11 @@ h1{
         width: 100%;
     }
 }
+
 footer .footer-text {
     margin: 23px 0;
     text-align: center;
     justify-content: center;
     color: grey;
     padding: 12px 0;
-  }
+}
